@@ -19,6 +19,7 @@ footer {
 }
 h1 {
     font-weight: bold;
+    font-size: 25px;
 }
 nav {
     position: relative;
@@ -30,4 +31,5 @@ a {
 p {
     padding: 15vmax;
     text-align: center;
+    font-size: 20px
 }
