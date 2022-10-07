@@ -3,3 +3,27 @@ html {
     font-family: Optima, Segoe, "Segoe UI", Candara, Calibri, Arial, sans-serif;
     background-color: rgb(220, 230, 255);
 }
+header {
+    text-align: center;
+    color: rgb(0, 0, 0);
+}
+body {
+    padding: 15%;
+    text-align: center;
+}
+footer {
+    text-align: center;
+}
+h1 {
+    font-weight: bold;
+}
+nav {
+    position: sticky;
+    font-size: 15px;
+}
+a {
+    text-decoration: none;
+}
+p {
+    text-align: center;
+}
