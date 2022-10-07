@@ -8,6 +8,7 @@ header {
     color: rgb(0, 0, 0);
 }
 body {
+    padding: 15vmax;
     text-align: center;
 }
 footer {
@@ -18,7 +19,6 @@ footer {
     text-align: center;
 }
 h1 {
-    padding: 15vmax;
     font-weight: bold;
     font-size: 40px;
 }
@@ -30,6 +30,7 @@ a {
     text-decoration: none;
 }
 p {
+    padding: 1vmax;
     text-align: center;
     font-size: 20px
 }
