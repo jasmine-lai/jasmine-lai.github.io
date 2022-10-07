@@ -1,12 +1,12 @@
 html {
     color: rgb(0, 0, 0);
-    font-family: Optima, Segoe, "Segoe UI", Candara, Calibri, Arial, sans-serif;
+    font-family: Oxygen, sans-serif;
     background-color: rgb(255, 255, 255);
     overflow-x: hidden;
 }
 header {
     text-align: center;
-    color: rgb(29, 36, 41);
+    color: rgb(38, 51, 61);
 }
 body {
     text-align: center;
