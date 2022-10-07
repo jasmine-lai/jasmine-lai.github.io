@@ -14,25 +14,22 @@
             <a href="pages/extra.html">extra</a>
         </nav>
     </header>
-    <body>
+    <body onload="typeHello()">
         <h1>my personal website</h1>
-        <p>
-        <p id="hello"></p> 
-        <p>"type()"</p>
+        <p id="hello">""</p> 
         <script>
             var i = 0;
             var txt = 'My name is Jasmine.\nNice to meet you!';
             var speed = 40;
 
-            function type() {
+            function typeHello() {
                 if (i < txt.length) {
                     document.getElementById("hello").innerHTML += txt.charAt(i);
                     i++
-                    setTimeout(type, speed);
+                    setTimeout(typeHello, speed);
                 }
             }
         </script>
-        </p>
     </body>
     <footer>
         <a href="mailto:lai.jas@northeastern.edu">email</a>
