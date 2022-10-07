@@ -2,10 +2,10 @@ html {
     color: rgb(0, 0, 0);
     font-size: 20px; 
     font-family: Optima, sans-serif; 
-    background-color: rgb(149, 150, 205);
+    background-color: rgb(220, 220, 255);
 }
 body {
-    padding: 25%;
+    padding: 10%;
     background-color: rgb(145, 199, 223);
 }
 header {
@@ -14,10 +14,14 @@ header {
     font-weight: bold;
     background-color: rgb(245, 176, 207);
 }
+h1 {
+    text-align: center;
+}
 nav {
     position: sticky;
     font-size: inherit;
-    background-color: rgb(54, 112, 50);
+    background-color: inherit;
+    list-style: none;
 }
 a {
     color: inherits;
@@ -25,5 +29,5 @@ a {
 }
 p {
     padding: 5%;
-    background-color: rgb(206, 169, 126);
+    background-color: rgb(207, 164, 150);
 }
