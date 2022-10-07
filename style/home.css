@@ -1,12 +1,12 @@
 html {
     color: rgb(0, 0, 0);
     font-family: Optima, Segoe, "Segoe UI", Candara, Calibri, Arial, sans-serif;
-    background-color: rgb(255, 251, 232);
+    background-color: rgb(255, 255, 255);
     overflow-x: hidden;
 }
 header {
     text-align: center;
-    color: rgb(0, 0, 0);
+    color: rgb(24, 34, 43);
 }
 body {
     text-align: center;
@@ -35,4 +35,5 @@ a {
 p {
     text-align: center;
     font-size: 20px;
+    color: rgb(141,17,15);
 }
