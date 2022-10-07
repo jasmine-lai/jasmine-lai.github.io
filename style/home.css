@@ -1,7 +1,7 @@
 html {
     color: rgb(0, 0, 0);
     font-family: Optima, Segoe, "Segoe UI", Candara, Calibri, Arial, sans-serif;
-    background-color: rgb(245, 240, 220);
+    background-color: rgb(255, 251, 232);
     overflow-x: hidden;
 }
 header {
@@ -19,7 +19,7 @@ footer {
     text-align: center;
 }
 h1 {
-    padding-top: 20vmax;
+    padding-top: 15vmax;
     height: 50px;
     width: 100%;
     font-weight: bold;
