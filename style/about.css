@@ -17,10 +17,6 @@ footer {
     width: 100%;
     text-align: center;
 }
-footer li {
-    color: rgb(30,94,130);
-    padding: 15 px;
-}
 h1 {
     height: 30px;
     width: 100%;
@@ -31,12 +27,10 @@ nav {
     position: relative;
     font-size: 15px;
 }
-nav li {
-    color: rgb(30,94,130);
-    padding: 15 px;
-}
 a {
+    padding: 15 px;
     text-decoration: none;
+    color: rgb(30,94,130);
 }
 p {
     text-align: center;
