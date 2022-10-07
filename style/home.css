@@ -8,6 +8,7 @@ header {
     color: rgb(0, 0, 0);
 }
 body {
+    padding: 15%;
     min-height: 100%;
     width: 100%;
     text-align: center;
@@ -16,6 +17,7 @@ footer {
     text-align: center;
 }
 h1 {
+    height: 50%;
     font-weight: bold;
 }
 nav {
