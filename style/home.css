@@ -2,6 +2,7 @@ html {
     color: rgb(0, 0, 0);
     font-family: Optima, Segoe, "Segoe UI", Candara, Calibri, Arial, sans-serif;
     background-color: rgb(238, 241, 255);
+    overflow-x: hidden;
 }
 header {
     position: fixed;
@@ -10,7 +11,6 @@ header {
     background-color: rgb(255, 206, 206);
 }
 body {
-    overflow-x: hidden;
     text-align: center;
     background-color: rgb(206, 255, 222);
 }
@@ -27,6 +27,7 @@ h1 {
     width: 100%;
     font-weight: bold;
     font-size: 50px;
+    background-color: rgb(229, 191, 211);
 }
 nav {
     position: relative;
