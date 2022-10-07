@@ -13,7 +13,7 @@ body {
 footer {
     position: relative;
     bottom: 0;
-    height: 100vh;
+    height: 90vh;
     width: 100%;
     text-align: center;
 }
@@ -28,7 +28,6 @@ a {
     text-decoration: none;
 }
 p {
-    padding-top: 10vh;
-    padding-left: 15vw;
+    padding: 20 vmax;
     text-align: center;
 }
