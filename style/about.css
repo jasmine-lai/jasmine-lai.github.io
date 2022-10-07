@@ -21,13 +21,13 @@ h1 {
     font-weight: bold;
 }
 nav {
-    position: sticky;
+    position: relative;
     font-size: 15px;
 }
 a {
     text-decoration: none;
 }
 p {
-    padding: 20vmax;
+    padding: 15vmax;
     text-align: center;
 }
