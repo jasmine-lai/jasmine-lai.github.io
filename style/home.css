@@ -6,7 +6,6 @@ html {
 }
 header {
     text-align: center;
-    color: rgb(48,74,87);
 }
 body {
     text-align: center;
@@ -24,6 +23,7 @@ h1 {
     width: 100%;
     font-weight: bold;
     font-size: 50px;
+    color: rgb(48,74,87);
 }
 nav {
     position: relative;
