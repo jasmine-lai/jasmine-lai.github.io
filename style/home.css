@@ -23,7 +23,7 @@ h1 {
     width: 100%;
     font-weight: bold;
     font-size: 50px;
-    color: rgb(48,74,87);
+    color: rgb(26,43,53);
 }
 nav {
     position: relative;
@@ -33,6 +33,10 @@ a {
     padding: 20px;
     text-decoration: none;
     color: rgb(30,94,130);
+}
+a:hover {
+    color: rgb(26,43,53);
+    background-color: rgb(226, 234, 240)
 }
 p {
     text-align: center;
