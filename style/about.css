@@ -1,40 +1,9 @@
-html {
-    color: rgb(0, 0, 0);
-    font-family: "Oxygen", sans-serif;
-    background-color: rgb(255, 255, 255);
-}
-header {
-    text-align: center;
-}
-body {
-    text-align: center;
-}
-footer {
-    position: fixed;
-    bottom: 0;
-    height: 50px;
-    width: 100%;
-    text-align: center;
-}
 h1 {
     height: 30px;
     width: 100%;
     font-weight: bold;
     font-size: 35px;
     color: rgb(26,43,53);
-}
-nav {
-    position: relative;
-    font-size: 15px;
-}
-a {
-    padding: 20px;
-    text-decoration: none;
-    color: rgb(30,94,130);
-}
-a:hover {
-    color: rgb(26,43,53);
-    background-color: rgb(226, 234, 240)
 }
 p {
     text-align: center;
