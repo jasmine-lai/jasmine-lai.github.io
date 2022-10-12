@@ -5,6 +5,10 @@ h1 {
     font-size: 35px;
     color: rgb(26,43,53);
 }
+img {
+    height: 50%;
+    width: 50%;
+}
 p {
     text-align: center;
     padding: 10%;
