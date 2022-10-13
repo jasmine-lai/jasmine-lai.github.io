@@ -9,12 +9,12 @@ p {
     text-align: center;
     padding-top: 5%;
 }
-.contact {
+a.contact {
     padding: 20px;
     text-decoration: none;
     color: rgb(141,17,15);
 }
-.contact:hover {
+a.contact:hover {
     color: rgb(26,43,53);
     background-color: rgb(249,241,239)
 }
