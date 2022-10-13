@@ -5,3 +5,16 @@ h1 {
     font-size: 35px;
     color: rgb(26,43,53);
 }
+p {
+    text-align: center;
+    padding-top: 10%;
+}
+a {
+    padding: 20px;
+    text-decoration: none;
+    color: rgb(141,17,15);
+}
+a:hover {
+    color: rgb(26,43,53);
+    background-color: rgb(248,232,227)
+}
