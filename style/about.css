@@ -6,13 +6,14 @@ h1 {
     color: rgb(26,43,53);
 }
 img {
+    padding: 20px;
     width: 100%;
     max-width: 400px;
     height: auto;
 }
 p {
     text-align: center;
-    padding-top: 1%;
+    padding-top: 0.5%;
     padding-left: 10%;
 }
 .container {
