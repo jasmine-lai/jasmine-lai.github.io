@@ -1,5 +1,5 @@
 h1 {
-    height: 30px;
+    height: 5vh;
     width: 100%;
     font-weight: bold;
     font-size: 35px;
@@ -10,7 +10,7 @@ p {
     padding-top: 2%;
 }
 a.contact {
-    padding: 20px;
+    padding: 5vh;
     text-decoration: none;
     color: rgb(141,17,15);
 }
