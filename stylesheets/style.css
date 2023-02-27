@@ -96,7 +96,13 @@ nav ul li a:hover::after {
 .col-right .trivia {
     font-size: 17px;
     text-align: left;
-    color: #567d92;
+    color: #9e8059;
+}
+.col-right .trivia-list {
+    margin-left: 10px;
+    font-size: 17px;
+    text-align: left;
+    color: #9e8059;
 }
 .col-right #icons {
     display: flex;
