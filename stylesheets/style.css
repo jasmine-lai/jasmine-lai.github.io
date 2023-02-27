@@ -19,7 +19,7 @@ header h1 {
     color: #254257;
 }
 body {
-    background: #fffcf8;
+    background: #fffefd;
     text-align: center;
     height: 100vh;
 }
@@ -65,7 +65,7 @@ nav ul li a:hover::after {
 /* ----------- about ----------- */
 #about {
     padding: 10% 0;
-    background: #fffcf8;
+    background: #fffefd;
 }
 .row {
     display: flex;
@@ -126,7 +126,7 @@ nav ul li a:hover::after {
 #projects {
     padding: 80px 0;
     width: 100%;
-    background: #fffcf8;
+    background: #fffefd;
 }
 #projects h1 {
     text-align: center;
@@ -137,7 +137,7 @@ nav ul li a:hover::after {
 #art {
     padding: 80px 0;
     width: 100%;
-    background: #fffcf8;
+    background: #fffefd;
 }
 #art h1 {
     text-align: center;
