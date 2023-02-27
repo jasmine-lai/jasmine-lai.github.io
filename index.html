@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="stylesheets/style.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oxygen">
 </head>
-<header>
+<header onload="typeHello()">
     <div class="container">
     <nav>
         <ul>
@@ -18,12 +18,31 @@
             <li><a href="more.html">More</a></li>
         </ul>   
     </nav>
-    <div class="header-content" onload="typeHello()">
+    <div class="header-content">
     <h1>Jasmine Lai</h1>
+    <p id="hello"></p>
     <script>
         var i = 0;
-        var txt = 'student, developer, learner';
+        var text = 'student, developer, engineer';
         var speed = 65;
+
+        function typeHello() {
+            if (i < txt.length) {
+                document.getElementById("hello").innerHTML += text.charAt(i);
+                i++
+                setTimeout(typeHello, speed);
+            }
+        }
+    </script>
+    </div>
+    </div>
+</header>
+<body onload="typeHello()"> 
+    <p id="hello"></p>
+    <script>
+        var i = 0;
+        var txt = 'student,   developer,   learner';
+        var speed = 70;
 
         function typeHello() {
             if (i < txt.length) {
@@ -33,25 +52,6 @@
             }
         }
     </script>
-    </div>
-    </div>
-</header>
-<body> <!--onload="typeHello()"-->
-    <!-- <h1>Jasmine Lai</h1>
-    <p id="hello"></p>
-    <script>
-        var i = 0;
-        var txt = 'student, developer, learner';
-        var speed = 65;
-
-        function typeHello() {
-            if (i < txt.length) {
-                document.getElementById("hello").innerHTML += txt.charAt(i);
-                i++
-                setTimeout(typeHello, speed);
-            }
-        }
-    </script> -->
 </body>
 <!-- <footer>
     <a href="mailto:lai.jas@northeastern.edu" target="_blank" rel="noopener noreferrer">email</a>
