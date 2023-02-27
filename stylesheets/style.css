@@ -4,12 +4,13 @@
     font-family: "Oxygen", sans-serif;
     box-sizing: border-box;
 }
+/* ---------- homepage ---------- */
 header {
     width: 100%;
     height: 100vh;
 }
 header h1 {
-    margin-top: 18%;
+    margin-top: 40vmin;
     text-align: center;
     font-size: 50px;
     color: #254257;
@@ -39,17 +40,10 @@ nav ul li {
     list-style: none; 
     margin: 10px 20px;
 }
-/* footer {
-    position: fixed;
-    bottom: 0;
-    height: 50px;
-    width: 100%;
-    text-align: center;
-} */
 nav ul li a {
     color: #254257;
     text-decoration: none;
-    font-size: 18px;
+    font-size: 3vmin;
     position: relative;
 }
 nav ul li a::after {
@@ -65,9 +59,11 @@ nav ul li a::after {
 nav ul li a:hover::after {
     width: 100%;
 }
-/* ----- about ----- */
+/* ------------ about ------------ */
 #about {
-    padding: 80px 0;
+    width: 100%;
+    height: 100vh;
+    padding: 22vmin 0;
     background: #f1e8e2;
 }
 .row {
@@ -80,6 +76,7 @@ nav ul li a:hover::after {
     flex-basis: 35%;
 }
 .col-left img {
+    margin-top: 5vmin;
     width: 100%;
     border-radius: 10px;
 }
@@ -87,12 +84,23 @@ nav ul li a:hover::after {
     flex-basis: 50%;
 }
 .col-right h1 {
-    font-size: 30px;
+    font-size: 6vmin;
     color: #254257;
 }
 .col-right p {
     margin-top: 5%;
-    font-size: 18px;
+    font-size: 3vmin;
     text-align: left;
     color: #54778a;
+}
+/* ----------- projects ----------- */
+#projects {
+    padding: 80px 0;
+    background: #fffcf8;
+}
+#projects h1 {
+    padding-left: 5%;
+    text-align: left;
+    font-size: 40px;
+    color: #254257;
 }
