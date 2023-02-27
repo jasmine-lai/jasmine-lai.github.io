@@ -7,12 +7,13 @@
     <link rel="stylesheet" href="stylesheets/style.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oxygen">
 </head>
-<header>
+<!-- -------------------- homepage -------------------- -->
+<header id="home">
     <div class="container">
     <nav>
         <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About</a></li>
+            <li><a href=#home>Home</a></li>
+            <li><a href=#about>About</a></li>
             <li><a href="code.html">Code</a></li>
             <li><a href="art.html">Art</a></li>
             <li><a href="more.html">More</a></li>
@@ -20,23 +21,43 @@
     </nav>
     <h1>Jasmine Lai</h1>
     <p id="hello"></p>
-    </div>   
+    </div>  
+    <script src="script.js"></script> 
 </header>
 <body onload="typeHello()"> 
     <script>
-        var i = 0;
         var txt = 'student,   developer,   engineer';
         var speed = 70;
-
+        var i = 0;
         function typeHello() {
             if (i < txt.length) {
                 document.getElementById("hello").innerHTML += txt.charAt(i);
-                i++
+                i++;
                 setTimeout(typeHello, speed);
             }
         }
     </script>
 </body>
+<!-- ----------------------- about ----------------------- -->
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="col-left">
+                <img src="media/about.jpg" alt=":(">
+            </div>
+            <div class="col-right">
+                <h1>About Me</h1>
+                <p>
+                    Hi! I'm Jasmine. I'm a second-year student at Northeastern University studying computer science. 
+                    I've always been passionate about working in a development field and pushing the boundaries of society, 
+                    especially through technology. Some of my favorite activities include figure skating, 
+                    hiking, bouldering, snowboarding, and travel. I also enjoy playing casual video games such as Genshin Impact. 
+                    My favorite book is The Martian by Andy Weir, and my favorite show is The Expanse. 
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
 <!-- <footer>
     <a href="mailto:lai.jas@northeastern.edu" target="_blank" rel="noopener noreferrer">email</a>
     <a href="https://github.com/jasmine-lai" target="_blank" rel="noopener noreferrer">github</a>
