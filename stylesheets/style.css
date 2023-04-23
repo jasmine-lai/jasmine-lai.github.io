@@ -140,7 +140,7 @@ nav ul li a:hover::after {
     margin-top: 50px;
 }
 .projects-list div {
-    background: #faf8f2;
+    background: #faf6f2;
     padding: 40px;
     border-radius: 10px;
     transition: 0.3s;
