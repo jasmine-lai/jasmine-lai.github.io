@@ -71,6 +71,7 @@ nav ul li a:hover::after {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+    margin-top: 50px;
 }
 .col-left {
     margin-left: 5%;
@@ -124,7 +125,7 @@ nav ul li a:hover::after {
 }
 /* ---------- projects --------- */
 #projects {
-    padding: 60px 0;
+    padding: 50px 0;
     width: 100%;
     background: #fffefd;
 }
@@ -137,55 +138,81 @@ nav ul li a:hover::after {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     grid-gap: 40px;
-    margin-top: 50px;
+    margin-top: 40px;
 }
-.projects-list div {
-    background: #faf6f2;
-    padding: 40px;
-    border-radius: 10px;
-    transition: 0.3s;
+.projects-list .project {
+    border-radius: 5px;
+    position: relative;
+    overflow: hidden;
 }
-.projects-list div:hover {
-    background: #f3ebe1;
-    transform: translateY(-5px);
+.project img {
+    width: 100%;
+    border-radius: 5px;
+    display: block;
+    transition: transform 0.5s;
 }
-.projects-list h2 {
+.projects-list .layer {
+    width: 100%;
+    height: 0;
+    background: linear-gradient(rgba(255,255,255,1), #f3ede1);
+    border-radius: 5px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 40px;
+    text-align: center;
+    transition: height 0.5s;
+}
+.layer h2 {
     font-size: 25px;
     font-weight: 500;
     text-align: left;
-    color: #2e536d;
+    color: #254257;
     margin-bottom: 15px;
 }
-.projects-list p {
+.layer p {
     font-size: 17px;
     font-weight: 300;
     text-align: left;
-    color: #567d92;
+    color: #254257;
     margin-bottom: 15px;
 }
-.projects-list a {
+.layer a {
     font-size: 17px;
     color: #9e8059;
     text-decoration: none;
     margin-top: 15px;
     display: inline-block
 }
-/* .projects-list a::after {
-    content: '';
-    width: 0;
-    height: 1.5px;
-    position: absolute;
-    left: 0;
-    bottom: -6px;
-    background: #c3b39c;
+.project:hover img {
+    transform: scale(1.05);
+}
+.project:hover .layer {
+    height: 100%;
+}
+.button {
+    display: block;
+    margin: 40px auto;
+    width: fit-content;
+    padding: 14px 50px;
+    border-radius: 10px;
+    text-decoration: none;
+    font-weight: 500;
+    background-color: #fffefd;
+    color: #254257;
     transition: 0.5s;
 }
-.projects-list a:hover::after {
-    width: 100%;
-} */
+.button:hover {
+    background: #f3ede1;
+}
 /* ------------ art ------------ */
 #art {
-    padding: 60px 0;
+    padding: 50px 0;
     width: 100%;
     background: #fffefd;
 }
@@ -198,12 +225,12 @@ nav ul li a:hover::after {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     grid-gap: 40px;
-    margin-top: 50px;
+    margin-top: 30px;
 }
 .art-list div {
     position: relative;
     overflow: hidden;
 }
 .art-list img {
-    width: 80%;
+    width: 70%;
 }
