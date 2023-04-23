@@ -194,3 +194,16 @@ nav ul li a:hover::after {
     font-size: 40px;
     color: #254257;
 }
+.art-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 40px;
+    margin-top: 50px;
+}
+.art-list div {
+    position: relative;
+    overflow: hidden;
+}
+.art-list img {
+    width: 80%;
+}
