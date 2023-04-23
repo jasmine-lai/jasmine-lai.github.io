@@ -64,7 +64,7 @@ nav ul li a:hover::after {
 }
 /* ----------- about ----------- */
 #about {
-    padding: 10% 0;
+    padding: 80px 0;
     background: #fffefd;
 }
 .row {
@@ -124,7 +124,7 @@ nav ul li a:hover::after {
 }
 /* ---------- projects --------- */
 #projects {
-    padding: 80px 0;
+    padding: 60px 0;
     width: 100%;
     background: #fffefd;
 }
@@ -133,9 +133,59 @@ nav ul li a:hover::after {
     font-size: 40px;
     color: #254257;
 }
+.projects-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 40px;
+    margin-top: 50px;
+}
+.projects-list div {
+    background: #faf8f2;
+    padding: 40px;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+.projects-list div:hover {
+    background: #f3ebe1;
+    transform: translateY(-5px);
+}
+.projects-list h2 {
+    font-size: 25px;
+    font-weight: 500;
+    text-align: left;
+    color: #2e536d;
+    margin-bottom: 15px;
+}
+.projects-list p {
+    font-size: 17px;
+    font-weight: 300;
+    text-align: left;
+    color: #567d92;
+    margin-bottom: 15px;
+}
+.projects-list a {
+    font-size: 17px;
+    color: #9e8059;
+    text-decoration: none;
+    margin-top: 15px;
+    display: inline-block
+}
+/* .projects-list a::after {
+    content: '';
+    width: 0;
+    height: 1.5px;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    background: #c3b39c;
+    transition: 0.5s;
+}
+.projects-list a:hover::after {
+    width: 100%;
+} */
 /* ------------ art ------------ */
 #art {
-    padding: 80px 0;
+    padding: 60px 0;
     width: 100%;
     background: #fffefd;
 }
