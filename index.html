@@ -2,9 +2,10 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width-device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Jasmine Lai</title>
     <link rel="stylesheet" href="stylesheets/homepage.css">
+    <link rel="stylesheet" href="stylesheets/homepage_small.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oxygen">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
@@ -12,12 +13,14 @@
 <header id="home">
     <div class="container">
     <nav>
-        <ul>
-            <li><a href=#home>Home</a></li>
+        <ul id="side-menu">
+            <i class="fa fa-times" onclick="closemenu()"></i>
+            <li class="top-li"><a href=#home>Home</a></li>
             <li><a href=#about>About</a></li>
             <li><a href=#projects>Projects</a></li>
             <li><a href=#art>Art</a></li>
-        </ul>   
+        </ul>  
+        <i class="fa fa-bars" onclick="openmenu()"></i> 
     </nav>
     <h1>Jasmine Lai</h1>
     <p id="hello"></p>
@@ -129,5 +132,18 @@
         <a href="pages/art.html" class="button">Show me more</a>
     </div>
 </div>
+
+<script>
+    var sidemenu = document.getElementById("side-menu");
+
+    function openmenu() {
+        sidemenu.style.left = "0";
+    }
+
+    function closemenu() {
+        sidemenu.style.left = "-125px";
+    }
+
+</script>
 
 </html>
