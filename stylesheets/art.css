@@ -70,6 +70,7 @@ nav .fa {
     grid-template-columns: repeat(auto-fit, minmax(275px, 1fr));
     grid-gap: 40px;
     margin-top: 50px;
+    margin-bottom: 70px;
 }
 .art-list div {
     position: relative;
@@ -85,6 +86,10 @@ nav .fa {
 }
 
 @media only screen and (max-width: 600px) {
+    header h1 {
+        margin-top: 15%;
+        font-size: 35px;
+    }
     nav .fa {
         display: block;
         font-size: 25px;
