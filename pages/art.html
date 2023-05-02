@@ -11,10 +11,26 @@
 <header>
     <div class="container">
         <nav>
-            <ul>
-                <li><a href=../index.html>Home</a></li>
-            </ul>   
+            <ul id="side-menu">
+                <i class="fa fa-times" onclick="closemenu()"></i>
+                <li class="top-li"><a href=../index.html>Home</a></li>
+            </ul>  
+            <i class="fa fa-bars" onclick="openmenu()"></i> 
         </nav>
         <h1>Art Gallery</h1>
     </div>
 </header>
+
+<script>
+    var sidemenu = document.getElementById("side-menu");
+
+    function openmenu() {
+        sidemenu.style.left = "0";
+    }
+
+    function closemenu() {
+        sidemenu.style.left = "-125px";
+    }
+</script>
+
+</html>

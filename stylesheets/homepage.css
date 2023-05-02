@@ -121,7 +121,7 @@ nav .fa {
     list-style: none; 
     margin: 10px 30px;
 }
-.col-right .icons ul li i {
+.col-right .icons ul li .fa {
     text-decoration: none;
     font-size: 18px;
     position: relative;

@@ -62,3 +62,32 @@ nav ul li a::after {
 nav ul li a:hover::after {
     width: 100%;
 }
+
+@media only screen and (max-width: 600px) {
+    nav .fa {
+        display: block;
+        font-size: 25px;
+    }
+    nav ul {
+        background: #f3ede1;
+        position: fixed;
+        top: 0;
+        left: -125px;
+        width: 125px;
+        height: 100vh;
+        padding-top: 10px;
+        z-index: 2;
+        transition: left 0.4s;
+    }
+    nav ul .fa {
+        position: fixed;
+        margin-left: 15px;
+    }
+    nav ul .top-li {
+        margin-top: 40px;
+    }
+    nav ul li {
+        display: block;
+        margin: 20px; 
+    }
+}
