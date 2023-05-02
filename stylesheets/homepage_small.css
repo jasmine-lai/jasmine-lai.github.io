@@ -97,6 +97,9 @@
         font-size: 15px;
         margin-bottom: 5px;
     }
+    .layer .language {
+        font-size: 14px;
+    }
     .layer a {
         font-size: 15px;
         margin-top: 5px;

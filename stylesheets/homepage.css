@@ -186,6 +186,9 @@ nav .fa {
     color: #254257;
     margin-bottom: 15px;
 }
+.layer .language {
+    font-size: 16px;
+}
 .layer a {
     font-size: 17px;
     color: #9e8059;
