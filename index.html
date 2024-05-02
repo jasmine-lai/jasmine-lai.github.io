@@ -1,31 +1,150 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="utf-8">
-        <title>Jasmine Lai</title>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jasmine Lai</title>
+    <link rel="stylesheet" href="stylesheets/homepage.css">
+    <link rel="stylesheet" href="stylesheets/homepage_small.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oxygen">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<!-- ---------------------- homepage --------------------- -->
+<header id="home">
+    <div class="container">
+    <nav>
+        <ul id="side-menu">
+            <i class="fa fa-times" onclick="closemenu()"></i>
+            <li class="top-li"><a href=#home>Home</a></li>
+            <li><a href=#about>About</a></li>
+            <li><a href=#projects>Projects</a></li>
+            <li><a href=#art>Art</a></li>
+        </ul>  
+        <i class="fa fa-bars" onclick="openmenu()"></i> 
+    </nav>
+    <h1>Jasmine Lai</h1>
+    <p id="hello"></p>
+    </div>  
+</header>
+<body onload="typeHello()"> 
+    <script>
+        var txt = 'student,   developer,   engineer';
+        var speed = 70;
+        var i = 0;
+        function typeHello() {
+            if (i < txt.length) {
+                document.getElementById("hello").innerHTML += txt.charAt(i);
+                i++;
+                setTimeout(typeHello, speed);
+            }
+        }
+    </script>
+</body>
+<!-- ----------------------- about ----------------------- -->
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="col-left">
+                <img src="media/about.jpg" alt="Oops! Couldn't load image">
+            </div>
+            <div class="col-right">
+                <h1>About Me</h1>
+                <p>
+                    Hi! I'm Jasmine. I'm a second-year student at Northeastern University studying computer science. 
+                    I've always been passionate about working in a development field and pushing the boundaries of society, 
+                    especially through technology.
+                    <br>
+                    <br>
+                    <div class="trivia">
+                    My favorite...
+                    <div class="trivia-list">
+                    book ~ The Martian by Andy Weir
+                    <br>
+                    show ~ The Expanse
+                    <br>
+                    anime ~ Psycho-Pass
+                    <br>
+                    game ~ Genshin Impact / Honkai Star Rail
+                    </div>
+                    </div>
+                </p>
+                <div class="icons">
+                    <ul>
+                        <li><a href="mailto:lai.jas@northeastern.edu" target="_blank" rel="noopener noreferrer"><i class="fa fa-envelope"></i></a></li>
+                        <li><a href="https://linkedin.com/in/jasminelai03/" target="_blank" rel="noopener noreferrer"><i class="fa fa-linkedin-square"></i></a></li>
+                        <li><a href="https://github.com/jasmine-lai" target="_blank" rel="noopener noreferrer"><i class="fa fa-github"></i></a></li>
+                        <li><a href="media/resume.pdf" target="_blank" rel="noopener noreferrer"><i class="fa fa-file"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- --------------------- projects ---------------------- -->
+<div id="projects">
+    <div class="container">
+        <h1>Projects</h1>
+        <div class="projects-list">
+            <div class="project">
+                <img src="../media/personal-website.png" alt="Oops! Couldn't load image">
+                <div class="layer">  
+                    <h2>Personal Website</h2>
+                    <p>a responsive website serving as a digital portfolio for coding projects and more</p>
+                    <p class="language">HTML, CSS, JavaScript</p>
+                    <a href="https://github.com/jasmine-lai/jasmine-lai.github.io" target="_blank" rel="noopener noreferrer">details</a>
+                </div>
+            </div>
+            <div class="project">
+                <img src="../media/NUFind.png" alt="Oops! Couldn't load image">
+                <div class="layer">  
+                    <h2>NUFind</h2>
+                    <p>a prototype app connecting students, campus organizations, and administration at Northeastern</p>
+                    <p class="language">MySQL, Python, Docker</p>
+                    <a href="https://github.com/jasmine-lai/NUFind" target="_blank" rel="noopener noreferrer">details</a>
+                </div>
+            </div>
+            <div class="project">
+                <img src="../media/image-processing.png" alt="Oops! Couldn't load image">
+                <div class="layer">  
+                    <h2>Image Processing</h2>
+                    <p>an image-editing program with filtering and resizing features that is either text-based or uses a GUI</p>
+                    <p class="language">Java</p>
+                    <a href="https://github.com/jasmine-lai" target="_blank" rel="noopener noreferrer">details</a>
+                </div>
+            </div>
+        </div>
+        <a href="pages/projects.html" class="button">Show me more</a>
+    </div>
+</div>
+<!-- ------------------------ art ------------------------ -->
+<div id="art">
+    <div class="container">
+        <h1>Art</h1>
+        <div class="art-list">
+            <div>
+                <img src="media/portrait3.jpg" alt="Oops! Couldn't load image">
+            </div>
+            <div>
+                <img src="media/portrait2.jpg" alt="Oops! Couldn't load image">
+            </div>
+            <div>
+                <img src="media/portrait1.JPG" alt="Oops! Couldn't load image">
+            </div>
+        </div>
+        <a href="pages/art.html" class="button">Show me more</a>
+    </div>
+</div>
 
-        <!--CSS-->
-        <link rel="stylesheet" href="style/home.css">
+<script>
+    var sidemenu = document.getElementById("side-menu");
 
-    </head>
-    <body>
-        <nav>
-            <a href="index.html">home</a>
-            <a href="pages/about.html">about</a>
-            <a href="pages/projects.html">projects</a>
-            <a href="pages/art.html">art</a>
-            <a href="pages/misc.html">misc</a>
-        </nav>
-        <header id="home"></header>
-            <h1>jasmine-lai</h1>
-            <h3>welcome!</h3>
-        </header>
-        <p>
-            feel free to explore my projects, art, and other pages.
-            <br>you can find me at
-            <br>email: <a href="mailto:jasmine.lai.03@gmail.com">jasmine.lai.03@gmail.com</a>
-            <br>github: <a href="https://github.com/jasmine-lai">github.com/jasmine-lai</a>
-            <br>linkedin: <a href="https://linkedin.com/in/jasminelai03/">linkedin.com/in/jasminelai03</a>
-        </p>
-    </body>
+    function openmenu() {
+        sidemenu.style.left = "0";
+    }
+
+    function closemenu() {
+        sidemenu.style.left = "-125px";
+    }
+</script>
+
 </html>

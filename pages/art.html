@@ -1,16 +1,50 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="utf-8">
-        <title>Jasmine Lai</title>
-    </head>
-    <body>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jasmine Lai</title>
+    <link rel="stylesheet" href="../stylesheets/art.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oxygen">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<header>
+    <div class="container">
         <nav>
-            <a href="../index.html">home</a>
-            <a href="about.html">about</a>
-            <a href="projects.html">projects</a>
-            <a href="art.html">art</a>
-            <a href="misc.html">misc</a>
+            <ul id="side-menu">
+                <i class="fa fa-times" onclick="closemenu()"></i>
+                <li class="top-li"><a href=../index.html>Home</a></li>
+            </ul>  
+            <i class="fa fa-bars" onclick="openmenu()"></i> 
         </nav>
-    </body>
+        <h1>Art Gallery</h1>
+        <div class="art-list">
+            <div>
+                <img src="../media/portrait3.jpg" alt="Oops! Couldn't load image">
+                <p>Ink portrait, 2022</p>
+            </div>
+            <div>
+                <img src="../media/portrait2.jpg" alt="Oops! Couldn't load image">
+                <p>Ink portrait, 2022</p>
+            </div>
+            <div>
+                <img src="../media/portrait1.JPG" alt="Oops! Couldn't load image">
+                <p>Ink portrait, 2022</p>
+            </div>
+        </div>
+    </div>
+</header>
+
+<script>
+    var sidemenu = document.getElementById("side-menu");
+
+    function openmenu() {
+        sidemenu.style.left = "0";
+    }
+
+    function closemenu() {
+        sidemenu.style.left = "-125px";
+    }
+</script>
+
 </html>
